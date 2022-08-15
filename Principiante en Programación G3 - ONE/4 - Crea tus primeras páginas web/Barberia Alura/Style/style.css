@@ -2,7 +2,13 @@ body {
   background-color: #cccc;
 }
 
+img {
+  width: 100%;
+}
+
 h1,
+h2,
+h3,
 p {
   text-align: center;
 }
@@ -13,4 +19,27 @@ em strong {
 
 #mision {
   font-size: 20px;
+}
+
+.diferenciales {
+  padding: 10px;
+  background-color: white;
+}
+
+.diferenciales h2 {
+  text-align: center;
+}
+
+.diferenciales article {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.diferenciales article img {
+  width: 50%;
+}
+
+.items {
+  font-style: italic;
 }
