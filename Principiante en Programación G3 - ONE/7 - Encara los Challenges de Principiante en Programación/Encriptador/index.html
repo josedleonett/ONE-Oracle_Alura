@@ -28,21 +28,31 @@
 
             <p>Solo Ingrese minusculas y sin acentos</p>
 
-            <input class="BotonAzul" type="submit" value="Encriptar" />
+            <input
+              class="BotonAzul"
+              type="submit"
+              onclick="encriptar('encriptar')"
+              value="Encriptar"
+            />
 
-            <input class="Boton" type="submit" value="Desencriptar" />
+            <input
+              class="Boton"
+              type="submit"
+              onclick="encriptar('desencriptar')"
+              value="Desencriptar"
+            />
           </form>
         </div>
       </section>
 
       <section class="seccionResultado">
-        <article class="articuloResultado">
+        <article class="articuloResultado" id="articuloResultado">
           <input type="text" name="resultado" id="resultado" />
 
           <input class="Boton" type="button" value="Copiar" />
         </article>
 
-        <article class="articuloSinResultado">
+        <article class="articuloSinResultado" id="articuloSinResultado">
           <img src="img/munieco.png" alt="Ningun texto fue encontrado" />
 
           <p class="textoNegrita">Ningun mensaje fue encontrado</p>
@@ -51,5 +61,6 @@
         </article>
       </section>
     </main>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
