@@ -6,46 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Encriptador - Oracle Next Education</title>
     <link rel="stylesheet" href="styles/style.css" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+    </style>
   </head>
   <body>
-    <header>
-      <img src="img/logo.png" alt="" />
-    </header>
-
     <main>
-      <section>
-        <form action="">
-          <label for="Ingrese el texto aqui">
-            <input
+      <section class="seccionIngresar">
+        <header>
+          <img src="img/logo.png" alt="" />
+        </header>
+        <div class="contenedorCampo">
+          <form action="">
+            <textarea
+              class="campoIngresar"
               placeholder="Ingrese el texto aqui"
-              type="text"
-              name="Ingrese el texto aqui"
-              id="IngreseTexto"
-            />
-          </label>
-          <p>Solo Ingrese minusculas y sin acentos</p>
-          <label for="Encriptar">
-            <input type="submit" value="Encriptar" />
-          </label>
-          <label for="Desencriptar">
-            <input type="submit" value="Desencriptar" />
-          </label>
-        </form>
+              name="campoIngresar"
+              id="campoIngresar"
+            ></textarea>
+
+            <p>Solo Ingrese minusculas y sin acentos</p>
+
+            <input class="BotonAzul" type="submit" value="Encriptar" />
+
+            <input class="Boton" type="submit" value="Desencriptar" />
+          </form>
+        </div>
       </section>
 
-      <section>
-        <article>
-          <label for="resultado">
-            <input type="text" name="resultado" id="resultado" />
-          </label>
-          <label for="copiar">
-            <input type="button" value="Copiar" />
-          </label>
+      <section class="seccionResultado">
+        <article class="articuloResultado">
+          <input type="text" name="resultado" id="resultado" />
+
+          <input class="Boton" type="button" value="Copiar" />
         </article>
 
-        <article>
+        <article class="articuloSinResultado">
           <img src="img/munieco.png" alt="Ningun texto fue encontrado" />
-          <p>Ningun mensaje fue encontrado</p>
+
+          <p class="textoNegrita">Ningun mensaje fue encontrado</p>
+
           <p>Ingresa el texto que desea encriptar.</p>
         </article>
       </section>
