@@ -5,17 +5,24 @@ function encriptador(accion) {
 
   document.getElementById("articuloResultado").style.display = "flex";
 
-  mensajeCampoResultado = document.getElementById("campoResultado").value;
+  let mensajeCampoIngresar = document.getElementById("campoIngresar").value;
 
   if (accion === "encriptar") {
-    mensajeEncriptado = encriptar(mensajeCampoResultado);
+    let mensajeEncriptado = encriptar(mensajeCampoIngresar);
 
-    document.getElementById("campoResultado").value = mensajeEncriptado;
+    document.getElementById("campoResultado").innerHTML = mensajeEncriptado;
   } else {
-    //funcion DESENCRIPTAR
+    let mensajeEncriptado = desencriptar(mensajeCampoIngresar);
+
+    document.getElementById("campoResultado").innerHTML = mensajeEncriptado;
   }
 }
 
+function copiarPortapapeles() {
+  let campoResultado = document.getElementById("campoResultado").innerHTML;
+
+  navigator.clipboard.writeText(campoResultado);
+}
 // ¡Bienvenidos y Bienvenidas a nuestro primer desafío!
 
 // Durante estas cuatro semanas, vamos a trabajar en una aplicación que encripta textos, así podrás intercambiar mensajes secretos con otras personas que sepan el secreto de la encriptación utilizada.
@@ -53,18 +60,25 @@ function encriptador(accion) {
 
 // Buen proyecto!
 
-//funcion ENCRIPTAR
+//funcion ENCRIPTAR:
 
 function encriptar(mensaje) {
-  reemplazaE = mensaje.replace("e", "enter");
-  reemplazaI = reemplazaE.replace("i", "imes");
-  reemplazaA = reemplazaI.replace("a", "ai");
-  reemplazaO = reemplazaA.replace("o", "ober");
-  mensajeEncriptado = reemplazaO.replace("u", "ufat");
-
-  console.log("entro" + mensajeCampoResultado);
+  let reemplazaE = mensaje.replace(/e/g, "enter");
+  let reemplazaI = reemplazaE.replace(/i/g, "imes");
+  let reemplazaA = reemplazaI.replace(/a/g, "ai");
+  let reemplazaO = reemplazaA.replace(/o/g, "ober");
+  let mensajeEncriptado = reemplazaO.replace(/u/g, "ufat");
 
   return mensajeEncriptado;
 }
 
-//console.log(encriptar("gato"));
+//funcion DESENCRIPTAR:
+function desencriptar(mensaje) {
+  let reemplazaE = mensaje.replace(/enter/g, "e");
+  let reemplazaI = reemplazaE.replace(/imes/g, "i");
+  let reemplazaA = reemplazaI.replace(/ai/g, "a");
+  let reemplazaO = reemplazaA.replace(/ober/g, "o");
+  let mensajeEncriptado = reemplazaO.replace(/ufat/g, "u");
+
+  return mensajeEncriptado;
+}

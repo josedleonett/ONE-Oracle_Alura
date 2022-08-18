@@ -87,6 +87,8 @@ main {
   flex-direction: column;
   align-items: center;
 
+  width: 30vw;
+
   padding: 32px;
 
   background: #ffffff;
@@ -97,6 +99,19 @@ main {
 
 .articuloResultado {
   display: none;
+  flex-direction: column;
+
+  width: 100%;
+}
+.articuloResultado p {
+  font-size: 24px;
+  color: #495057;
+
+  width: 100%;
+  min-height: 68vh;
+}
+.articuloResultado .Boton {
+  width: 100%;
 }
 
 .articuloSinResultado {
