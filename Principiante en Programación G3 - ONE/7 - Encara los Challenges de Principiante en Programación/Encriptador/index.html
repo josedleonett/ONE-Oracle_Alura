@@ -21,6 +21,7 @@
           <form action="">
             <textarea
               class="campoIngresar"
+              id="campoIngresar"
               placeholder="Ingrese el texto aqui"
               name="campoIngresar"
               id="campoIngresar"
@@ -31,14 +32,14 @@
             <input
               class="BotonAzul"
               type="submit"
-              onclick="encriptar('encriptar')"
+              onclick="encriptador('encriptar')"
               value="Encriptar"
             />
 
             <input
               class="Boton"
               type="submit"
-              onclick="encriptar('desencriptar')"
+              onclick="encriptador('desencriptar')"
               value="Desencriptar"
             />
           </form>
@@ -47,7 +48,7 @@
 
       <section class="seccionResultado">
         <article class="articuloResultado" id="articuloResultado">
-          <input type="text" name="resultado" id="resultado" />
+          <input type="text" name="resultado" id="campoResultado" />
 
           <input class="Boton" type="button" value="Copiar" />
         </article>
