@@ -24,32 +24,39 @@
               id="campoIngresar"
               placeholder="Ingrese el texto aqui"
               name="campoIngresar"
-              id="campoIngresar"
+              autofocus="true"
+              required="true"
             ></textarea>
 
             <p>Solo Ingrese minusculas y sin acentos</p>
 
-            <input
-              class="BotonAzul"
-              type="submit"
-              onclick="encriptador('encriptar')"
-              value="Encriptar"
-            />
-
-            <input
-              class="Boton"
-              type="submit"
-              onclick="encriptador('desencriptar')"
-              value="Desencriptar"
-            />
+            <div>
+              <input
+                class="BotonAzul"
+                type="submit"
+                onclick="encriptador('encriptar')"
+                value="Encriptar"
+              />
+              <br />
+              <input
+                class="Boton"
+                type="submit"
+                onclick="encriptador('desencriptar')"
+                value="Desencriptar"
+              />
+            </div>
           </form>
         </div>
       </section>
 
       <section class="seccionResultado">
         <article class="articuloResultado" id="articuloResultado">
-          <p id="campoResultado"></p>
-
+          <!-- <p id="campoResultado"></p> -->
+          <textarea
+            name="campoResultado"
+            id="campoResultado"
+            disabled="true"
+          ></textarea>
           <button class="Boton" onclick="copiarPortapapeles()">Copiar</button>
         </article>
 
