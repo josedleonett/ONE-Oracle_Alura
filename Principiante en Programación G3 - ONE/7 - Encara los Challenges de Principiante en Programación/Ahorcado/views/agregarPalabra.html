@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juego del Ahorcado Alura</title>
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/agregarPalabra.css" />
+    <script
+      src="https://kit.fontawesome.com/d7b177c216.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="../img/logo-alura.png" alt="Logo" />
+    </header class="header">
+
+    <main>
+
+      <section class="agregarPalabraContenedor">
+        <textarea name="nvaPalabra" placeholder="Ingrese una palabra" autocapitalize="characters" autofocus maxlength="8" minlength="3"
+        cols="19"
+        rows="1"
+        ></textarea>
+        
+
+        <div id="maxLetrasContenedor">
+          <i class="fa-solid fa-circle-exclamation fa-fade"></i>
+          <p>Máx. de 8 letras</p>
+        </div>
+
+        <div>
+          <a class="btnAzul" href="">Guardar y empezar</a>
+          <a class="btnBlanco" href="../index.html">Cancelar</a>
+        </div>
+      </section>
+
+    </main>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+.agregarPalabraContenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 30px;
+  gap: 30px;
+  width: 100vw;
+}
+
+.agregarPalabraContenedor textarea {
+  margin-bottom: 40vh;
+
+  border: none;
+  background-color: #e5e5e5;
+
+  resize: none;
+
+  color: #0a3871;
+  font-size: 24px;
+  font-family: "Inter";
+}
+.agregarPalabraContenedor textarea::placeholder {
+  color: #0a3871;
+}
+.agregarPalabraContenedor textarea:focus {
+  outline: none;
+  border: none;
+}
+
+#maxLetrasContenedor {
+  display: flex;
+  align-items: center;
+  width: 200px;
+}
